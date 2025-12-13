@@ -54,41 +54,39 @@ def fetch_nasa_valid(lat, lon):
         f"&format=JSON"
     )
 
-    try:
-        r = requests.get(url, timeout=20)
-        r.raise_for_status()
-        params = r.json()["properties"]["parameter"]
+    r = requests.get(url, timeout=20)
+    params = r.json()["properties"]["parameter"]
+    dates = sorted(params[FEATURES[0]].keys(), reverse=True)
 
-        dates = sorted(params[FEATURES[0]].keys(), reverse=True)
+    for date in dates:
+        values = {f: float(params[f][date]) for f in FEATURES}
+        if all(v != -999 for v in values.values()):
+            return True, date, values
 
-        for date in dates:
-            values = {f: float(params[f][date]) for f in FEATURES}
-            if all(v != -999 for v in values.values()):
-                return {
-                    "data_ready": True,
-                    "date": date,
-                    "data": values
-                }
+    return False, None, None
 
+def interpret_risk(prob):
+    if prob < 0.30:
         return {
-            "data_ready": False,
-            "reason": "NASA data belum tersedia (semua -999)"
+            "status": "Aman",
+            "level": "rendah",
+            "warna": "green",
+            "keterangan": "Kondisi cuaca relatif normal dan risiko banjir rendah."
         }
-
-    except Exception as e:
+    elif prob < 0.60:
         return {
-            "data_ready": False,
-            "reason": str(e)
+            "status": "Waspada",
+            "level": "sedang",
+            "warna": "yellow",
+            "keterangan": "Curah hujan dan kelembapan cukup tinggi, perlu pemantauan."
         }
-
-def predict_weather(data):
-    df = pd.DataFrame([data], columns=FEATURES)
-    scaled = scaler.transform(df)
-
-    return {
-        "prediksi": int(model.predict(scaled)[0]),
-        "probabilitas": float(model.predict_proba(scaled)[0][1])
-    }
+    else:
+        return {
+            "status": "Berpotensi Banjir",
+            "level": "tinggi",
+            "warna": "red",
+            "keterangan": "Kondisi cuaca mendukung terjadinya banjir."
+        }
 
 @app.route("/")
 def health():
@@ -103,20 +101,30 @@ def predict_api():
     response = {}
 
     for city, (lat, lon) in LOCATIONS.items():
-        nasa = fetch_nasa_valid(lat, lon)
+        ready, date, data = fetch_nasa_valid(lat, lon)
 
-        if not nasa["data_ready"]:
+        if not ready:
             response[city] = {
                 "data_ready": False,
-                "reason": nasa["reason"]
+                "reason": "NASA data belum tersedia"
             }
             continue
 
+        df = pd.DataFrame([data], columns=FEATURES)
+        scaled = scaler.transform(df)
+
+        prob = float(model.predict_proba(scaled)[0][1])
+        pred = int(model.predict(scaled)[0])
+
         response[city] = {
             "data_ready": True,
-            "date": nasa["date"],
-            "data": nasa["data"],
-            "prediction": predict_weather(nasa["data"])
+            "date": date,
+            "data": data,
+            "prediction": {
+                "prediksi": pred,
+                "probabilitas": prob
+            },
+            "interpretasi": interpret_risk(prob)
         }
 
     return jsonify(response)
