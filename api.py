@@ -130,10 +130,7 @@ def predict_api():
 
     return jsonify(output)
 
-# 7. RUN SERVER
 if __name__ == "__main__":
-    thread = threading.Thread(target=background_loop)
-    thread.daemon = True
-    thread.start()
-
-    socketio.run(app, host="0.0.0.0", port=5000)
+    import os
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=port)
