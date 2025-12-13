@@ -1,9 +1,9 @@
 from flask import Flask, jsonify
 import requests
-import numpy as np
 import pandas as pd
 import joblib
 from datetime import datetime, timedelta
+import os
 
 app = Flask(__name__)
 
@@ -22,91 +22,66 @@ LOCATIONS = {
     "Sukabumi":        (-6.91806, 106.92667)
 }
 
-# 2. LOAD MODEL
+# 2. FEATURE MODEL
 FEATURES = [
     "PRECTOTCORR", "T2M_MIN", "T2M_MAX", "RH2M",
     "WS2M", "WD2M", "PS", "ALLSKY_SFC_SW_DWN"
 ]
 
+# 3. LOAD MODEL
 scaler = joblib.load("scaler.pkl")
-logreg_model = joblib.load("logreg_model.pkl")
+model = joblib.load("logreg_model.pkl")
 
-print("Model dan Scaler berhasil dimuat.")
+print("Model dan scaler berhasil dimuat")
 
-# 3. AMBIL DATA NASA LENGKAP
+# 4. AMBIL DATA NASA
 def fetch_nasa(lat, lon):
     end = datetime.utcnow()
     start = end - timedelta(days=3)
 
     url = (
-        f"https://power.larc.nasa.gov/api/temporal/daily/point?"
+        "https://power.larc.nasa.gov/api/temporal/daily/point?"
         f"parameters={','.join(FEATURES)}"
         f"&community=AG"
         f"&latitude={lat}&longitude={lon}"
         f"&start={start:%Y%m%d}&end={end:%Y%m%d}"
-        f"&format=JSON"
+        "&format=JSON"
     )
 
-    try:
-        r = requests.get(url, timeout=20)
-        r.raise_for_status()
-        d = r.json()["properties"]["parameter"]
+    r = requests.get(url, timeout=20)
+    r.raise_for_status()
 
-        latest = sorted(d["PRECTOTCORR"].keys())[-1]
+    d = r.json()["properties"]["parameter"]
+    latest = sorted(d["PRECTOTCORR"].keys())[-1]
 
-        return {
-            "PRECTOTCORR": float(d["PRECTOTCORR"][latest]),
-            "T2M_MIN": float(d["T2M_MIN"][latest]),
-            "T2M_MAX": float(d["T2M_MAX"][latest]),
-            "RH2M": float(d["RH2M"][latest]),
-            "WS2M": float(d["WS2M"][latest]),
-            "WD2M": float(d["WD2M"][latest]),
-            "PS": float(d["PS"][latest]),
-            "ALLSKY_SFC_SW_DWN": float(d["ALLSKY_SFC_SW_DWN"][latest])
-        }
+    return {k: float(d[k][latest]) for k in FEATURES}
 
-    except Exception as e:
-        print("NASA Error:", e)
-        return None
-
-# 4. FUNGSI PREDIKSI (LOGREG)
+# 5. PREDIKSI
 def predict(data):
     df = pd.DataFrame([data], columns=FEATURES)
-
     scaled = scaler.transform(df)
-    pred = int(logreg_model.predict(scaled)[0])
 
-    try:
-        prob = float(logreg_model.predict_proba(scaled)[0][1])
-    except:
-        prob = None
+    pred = int(model.predict(scaled)[0])
+    prob = float(model.predict_proba(scaled)[0][1])
 
     return {
         "prediksi": pred,
         "probabilitas": prob
     }
 
-
-
-# 6. API MANUAL (opsional)
+# 6. ENDPOINT API
 @app.route("/predict")
 def predict_api():
-    output = {}
+    result = {}
 
-    for name, (lat, lon) in LOCATIONS.items():
-        data = fetch_nasa(lat, lon)
-
-        if data:
-            output[name] = {
+    for city, (lat, lon) in LOCATIONS.items():
+        try:
+            data = fetch_nasa(lat, lon)
+            result[city] = {
                 "data": data,
                 "prediction": predict(data)
             }
-        else:
-            output[name] = {"error": "NASA fetch failed"}
+        except Exception as e:
+            result[city] = {"error": str(e)}
 
-    return jsonify(output)
-
-if __name__ == "__main__":
-    import os
-    port = int(os.environ.get("PORT", 8000))
-    app.run(host="0.0.0.0", port=port)
+    return jsonify(result)
