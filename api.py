@@ -1,15 +1,11 @@
 from flask import Flask, jsonify
-from flask_socketio import SocketIO
 import requests
 import numpy as np
 import pandas as pd
 import joblib
-import threading
-import time
 from datetime import datetime, timedelta
 
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins="*")
 
 # 1. DAFTAR KOTA + KOORDINAT
 LOCATIONS = {
@@ -90,27 +86,7 @@ def predict(data):
         "probabilitas": prob
     }
 
-# 5. LOOP BACKGROUND REALTIME
-def background_loop():
-    while True:
-        result_all = {}
 
-        for name, (lat, lon) in LOCATIONS.items():
-            data = fetch_nasa(lat, lon)
-
-            if data:
-                pred = predict(data)
-                result_all[name] = {
-                    "data": data,
-                    "prediction": pred
-                }
-            else:
-                result_all[name] = {"error": "NASA fetch failed"}
-
-        socketio.emit("prediction", result_all)
-        print("Realtime update terkirim.")
-
-        time.sleep(10)
 
 # 6. API MANUAL (opsional)
 @app.route("/predict")

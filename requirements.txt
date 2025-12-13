@@ -1,16 +1,7 @@
-# Web + server
 flask==2.2.5
-gunicorn==20.1.0
-
-
-# Data & ML
+requests>=2.31.0
 numpy>=1.24.0
 pandas>=2.0.0
 scikit-learn==1.6.1
 joblib>=1.2.0
-
-# HTTP requests (fetch NASA)
-requests>=2.31.0
-
-# load .env (optional)
 python-dotenv>=1.0.0
