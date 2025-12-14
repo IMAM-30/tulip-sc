@@ -14,16 +14,30 @@ def load_prediction(slug):
     with open(path, "r") as f:
         return json.load(f)
 
+def list_predictions():
+    return [
+        f.replace(".json", "")
+        for f in os.listdir(PREDICTION_PATH)
+        if f.endswith(".json")
+    ]
+
 @app.route("/")
 def health():
     return jsonify({
         "status": "ok",
-        "service": "TULIP Smart Climate API",
-        "mode": "read-only"
+        "mode": "read-only",
+        "service": "TULIP Smart Climate API"
+    })
+
+@app.route("/locations")
+def locations():
+    return jsonify({
+        "jumlah": len(list_predictions()),
+        "locations": list_predictions()
     })
 
 @app.route("/predict/<slug>")
-def predict(slug):
+def predict_slug(slug):
     data = load_prediction(slug)
     if not data:
         return jsonify({
@@ -32,15 +46,7 @@ def predict(slug):
         }), 404
     return jsonify(data)
 
-@app.route("/predict/default")
-def predict_default():
-    results = {}
-    for file in os.listdir(PREDICTION_PATH):
-        if file.endswith(".json"):
-            with open(os.path.join(PREDICTION_PATH, file)) as f:
-                results[file.replace(".json", "")] = json.load(f)
-    return jsonify(results)
-
 if __name__ == "__main__":
+    import os
     port = int(os.environ.get("PORT", 8080))
     app.run(host="0.0.0.0", port=port)
