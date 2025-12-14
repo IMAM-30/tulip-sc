@@ -1,0 +1,26 @@
+{
+  "location": "Soppeng",
+  "slug": "soppeng",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 16.23,
+    "T2M_MIN": 23.48,
+    "T2M_MAX": 30.09,
+    "RH2M": 87.25,
+    "WS2M": 1.15,
+    "WD2M": 288.2,
+    "PS": 98.6,
+    "ALLSKY_SFC_SW_DWN": 9.1
+  },
+  "prediction": {
+    "probabilitas": 0.7593083102369502
+  },
+  "interpretasi": {
+    "status": "Berpotensi Banjir",
+    "level": "tinggi",
+    "warna": "red"
+  },
+  "updated_at": "2025-12-14T17:37:01.013414"
+}

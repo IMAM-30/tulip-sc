@@ -1,0 +1,26 @@
+{
+  "location": "Maros",
+  "slug": "maros",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 20.57,
+    "T2M_MIN": 26.59,
+    "T2M_MAX": 28.32,
+    "RH2M": 79.84,
+    "WS2M": 2.12,
+    "WD2M": 294.0,
+    "PS": 99.42,
+    "ALLSKY_SFC_SW_DWN": 10.19
+  },
+  "prediction": {
+    "probabilitas": 0.9237778978016458
+  },
+  "interpretasi": {
+    "status": "Berpotensi Banjir",
+    "level": "tinggi",
+    "warna": "red"
+  },
+  "updated_at": "2025-12-14T17:36:52.360913"
+}

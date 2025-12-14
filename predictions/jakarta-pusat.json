@@ -1,0 +1,26 @@
+{
+  "location": "Jakarta Pusat",
+  "slug": "jakarta-pusat",
+  "group": "default",
+  "parent": "Nasional",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 3.33,
+    "T2M_MIN": 25.22,
+    "T2M_MAX": 29.99,
+    "RH2M": 78.83,
+    "WS2M": 2.8,
+    "WD2M": 259.6,
+    "PS": 100.19,
+    "ALLSKY_SFC_SW_DWN": 14.57
+  },
+  "prediction": {
+    "probabilitas": 0.021760404986626253
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "level": "rendah",
+    "warna": "green"
+  },
+  "updated_at": "2025-12-14T17:36:11.416934"
+}

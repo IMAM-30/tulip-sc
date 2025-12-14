@@ -1,0 +1,26 @@
+{
+  "location": "Wajo",
+  "slug": "wajo",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 12.95,
+    "T2M_MIN": 23.76,
+    "T2M_MAX": 29.51,
+    "RH2M": 87.12,
+    "WS2M": 1.29,
+    "WD2M": 284.1,
+    "PS": 98.57,
+    "ALLSKY_SFC_SW_DWN": 10.66
+  },
+  "prediction": {
+    "probabilitas": 0.49107181230985425
+  },
+  "interpretasi": {
+    "status": "Waspada",
+    "level": "sedang",
+    "warna": "yellow"
+  },
+  "updated_at": "2025-12-14T17:37:07.544135"
+}

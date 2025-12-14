@@ -1,0 +1,26 @@
+{
+  "location": "Takalar",
+  "slug": "takalar",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 17.86,
+    "T2M_MIN": 26.83,
+    "T2M_MAX": 28.83,
+    "RH2M": 78.89,
+    "WS2M": 2.1,
+    "WD2M": 285.1,
+    "PS": 99.67,
+    "ALLSKY_SFC_SW_DWN": 10.19
+  },
+  "prediction": {
+    "probabilitas": 0.8138018755060443
+  },
+  "interpretasi": {
+    "status": "Berpotensi Banjir",
+    "level": "tinggi",
+    "warna": "red"
+  },
+  "updated_at": "2025-12-14T17:37:02.660492"
+}

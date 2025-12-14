@@ -1,0 +1,26 @@
+{
+  "location": "Jeneponto",
+  "slug": "jeneponto",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 20.29,
+    "T2M_MIN": 25.08,
+    "T2M_MAX": 29.09,
+    "RH2M": 82.94,
+    "WS2M": 1.43,
+    "WD2M": 266.5,
+    "PS": 98.07,
+    "ALLSKY_SFC_SW_DWN": 10.19
+  },
+  "prediction": {
+    "probabilitas": 0.9223395513962525
+  },
+  "interpretasi": {
+    "status": "Berpotensi Banjir",
+    "level": "tinggi",
+    "warna": "red"
+  },
+  "updated_at": "2025-12-14T17:36:47.281374"
+}

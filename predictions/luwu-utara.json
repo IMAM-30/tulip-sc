@@ -1,0 +1,26 @@
+{
+  "location": "Luwu Utara",
+  "slug": "luwu-utara",
+  "group": "default",
+  "parent": "Nasional",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 7.32,
+    "T2M_MIN": 26.8,
+    "T2M_MAX": 27.88,
+    "RH2M": 78.04,
+    "WS2M": 1.22,
+    "WD2M": 160.9,
+    "PS": 99.13,
+    "ALLSKY_SFC_SW_DWN": 9.35
+  },
+  "prediction": {
+    "probabilitas": 0.08270055408788857
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "level": "rendah",
+    "warna": "green"
+  },
+  "updated_at": "2025-12-14T17:36:23.161662"
+}
