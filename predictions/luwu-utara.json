@@ -1,26 +1,47 @@
 {
-  "location": "Luwu Utara",
   "slug": "luwu-utara",
-  "group": "default",
-  "parent": "Nasional",
-  "date": "20251209",
+  "location": "Luwu Utara",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 7.32,
-    "T2M_MIN": 26.8,
-    "T2M_MAX": 27.88,
-    "RH2M": 78.04,
-    "WS2M": 1.22,
-    "WD2M": 160.9,
-    "PS": 99.13,
-    "ALLSKY_SFC_SW_DWN": 9.35
+    "PRECTOTCORR": 2.0,
+    "T2M_MIN": 18.11,
+    "T2M_MAX": 22.69,
+    "RH2M": 90.73,
+    "WS2M": 0.25,
+    "WD2M": 289.9,
+    "PS": 87.69,
+    "ALLSKY_SFC_SW_DWN": 14.26
   },
   "prediction": {
-    "probabilitas": 0.08270055408788857
+    "probabilitas": 0.00047732759337068255,
+    "percentage": 0.0
   },
   "interpretasi": {
     "status": "Aman",
-    "level": "rendah",
-    "warna": "green"
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:36:23.161662"
+  "updated_at": "2025-12-16T13:07:13.246462Z",
+  "coordinates": {
+    "lat": -2.7,
+    "lon": 120.1
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

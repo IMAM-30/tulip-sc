@@ -1,0 +1,47 @@
+{
+  "slug": "lappariaja",
+  "location": "Lappariaja",
+  "group": "kecamatan",
+  "parent": "Bone",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 8.4,
+    "T2M_MIN": 23.79,
+    "T2M_MAX": 29.28,
+    "RH2M": 86.8,
+    "WS2M": 0.92,
+    "WD2M": 263.7,
+    "PS": 98.68,
+    "ALLSKY_SFC_SW_DWN": 18.67
+  },
+  "prediction": {
+    "probabilitas": 0.03208103385626793,
+    "percentage": 3.2
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
+  },
+  "updated_at": "2025-12-16T12:54:33.431545Z",
+  "coordinates": {
+    "lat": -4.45,
+    "lon": 120.3
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
+}

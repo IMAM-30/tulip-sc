@@ -1,26 +1,47 @@
 {
-  "location": "Cianjur",
   "slug": "cianjur",
+  "location": "Cianjur",
   "group": "default",
   "parent": "Nasional",
-  "date": "20251209",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 3.42,
-    "T2M_MIN": 21.29,
-    "T2M_MAX": 27.27,
-    "RH2M": 85.87,
-    "WS2M": 0.89,
-    "WD2M": 206.2,
-    "PS": 95.38,
-    "ALLSKY_SFC_SW_DWN": 13.02
+    "PRECTOTCORR": 22.32,
+    "T2M_MIN": 22.31,
+    "T2M_MAX": 27.94,
+    "RH2M": 90.26,
+    "WS2M": 0.64,
+    "WD2M": 203.9,
+    "PS": 95.41,
+    "ALLSKY_SFC_SW_DWN": 12.74
   },
   "prediction": {
-    "probabilitas": 0.028066672914346617
+    "probabilitas": 0.9989607595863457,
+    "percentage": 99.9
   },
   "interpretasi": {
-    "status": "Aman",
-    "level": "rendah",
-    "warna": "green"
+    "status": "Berpotensi Banjir",
+    "warna": "red",
+    "level": "high"
   },
-  "updated_at": "2025-12-14T17:36:27.934633"
+  "updated_at": "2025-12-16T13:06:08.219339Z",
+  "coordinates": {
+    "lat": -6.818,
+    "lon": 107.14
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

@@ -1,0 +1,26 @@
+{
+  "location": "Toraja Utara",
+  "slug": "toraja-utara",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 11.83,
+    "T2M_MIN": 20.31,
+    "T2M_MAX": 24.87,
+    "RH2M": 89.5,
+    "WS2M": 0.38,
+    "WD2M": 137.4,
+    "PS": 90.7,
+    "ALLSKY_SFC_SW_DWN": 7.74
+  },
+  "prediction": {
+    "probabilitas": 0.4053504740685385
+  },
+  "interpretasi": {
+    "status": "Waspada",
+    "level": "sedang",
+    "warna": "yellow"
+  },
+  "updated_at": "2025-12-14T17:37:05.745925"
+}

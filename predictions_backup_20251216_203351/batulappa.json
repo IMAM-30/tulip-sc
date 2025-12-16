@@ -1,0 +1,26 @@
+{
+  "location": "Batulappa",
+  "slug": "batulappa",
+  "group": "kecamatan",
+  "parent": "Pinrang",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 11.99,
+    "T2M_MIN": 23.7,
+    "T2M_MAX": 26.78,
+    "RH2M": 85.28,
+    "WS2M": 1.83,
+    "WD2M": 292.9,
+    "PS": 96.35,
+    "ALLSKY_SFC_SW_DWN": 6.98
+  },
+  "prediction": {
+    "probabilitas": 0.39867577346760297
+  },
+  "interpretasi": {
+    "status": "Waspada",
+    "level": "sedang",
+    "warna": "yellow"
+  },
+  "updated_at": "2025-12-14T17:37:17.376002"
+}

@@ -1,26 +1,47 @@
 {
-  "location": "Gowa",
   "slug": "gowa",
+  "location": "Gowa",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251209",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 20.29,
-    "T2M_MIN": 25.08,
-    "T2M_MAX": 29.09,
-    "RH2M": 82.94,
-    "WS2M": 1.43,
-    "WD2M": 266.5,
-    "PS": 98.07,
-    "ALLSKY_SFC_SW_DWN": 10.19
+    "PRECTOTCORR": 2.61,
+    "T2M_MIN": 24.87,
+    "T2M_MAX": 28.25,
+    "RH2M": 82.05,
+    "WS2M": 1.36,
+    "WD2M": 270.9,
+    "PS": 98.16,
+    "ALLSKY_SFC_SW_DWN": 23.14
   },
   "prediction": {
-    "probabilitas": 0.9223395513962525
+    "probabilitas": 0.0003749938568015047,
+    "percentage": 0.0
   },
   "interpretasi": {
-    "status": "Berpotensi Banjir",
-    "level": "tinggi",
-    "warna": "red"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:36:45.333946"
+  "updated_at": "2025-12-16T13:07:00.079974Z",
+  "coordinates": {
+    "lat": -5.3167,
+    "lon": 119.75
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

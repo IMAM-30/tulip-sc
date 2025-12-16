@@ -1,26 +1,47 @@
 {
-  "location": "Watang Sawitto",
   "slug": "watang-sawitto",
-  "group": "kecamatan",
-  "parent": "Pinrang",
-  "date": "20251209",
+  "location": "Watang Sawitto",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 16.81,
-    "T2M_MIN": 27.06,
-    "T2M_MAX": 28.42,
-    "RH2M": 80.42,
-    "WS2M": 2.88,
-    "WD2M": 291.4,
-    "PS": 99.97,
-    "ALLSKY_SFC_SW_DWN": 6.98
+    "PRECTOTCORR": 7.54,
+    "T2M_MIN": 27.08,
+    "T2M_MAX": 29.05,
+    "RH2M": 78.12,
+    "WS2M": 2.32,
+    "WD2M": 267.4,
+    "PS": 100.04,
+    "ALLSKY_SFC_SW_DWN": 16.16
   },
   "prediction": {
-    "probabilitas": 0.7617227972681733
+    "probabilitas": 0.010119874827447166,
+    "percentage": 1.0
   },
   "interpretasi": {
-    "status": "Berpotensi Banjir",
-    "level": "tinggi",
-    "warna": "red"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:37:25.556163"
+  "updated_at": "2025-12-16T13:06:48.476685Z",
+  "coordinates": {
+    "lat": -3.78,
+    "lon": 119.65
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

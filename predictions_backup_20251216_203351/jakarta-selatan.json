@@ -1,0 +1,26 @@
+{
+  "location": "Jakarta Selatan",
+  "slug": "jakarta-selatan",
+  "group": "default",
+  "parent": "Nasional",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 3.24,
+    "T2M_MIN": 21.7,
+    "T2M_MAX": 29.77,
+    "RH2M": 82.21,
+    "WS2M": 1.13,
+    "WD2M": 239.9,
+    "PS": 97.07,
+    "ALLSKY_SFC_SW_DWN": 14.57
+  },
+  "prediction": {
+    "probabilitas": 0.023026353062382793
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "level": "rendah",
+    "warna": "green"
+  },
+  "updated_at": "2025-12-14T17:36:16.160473"
+}

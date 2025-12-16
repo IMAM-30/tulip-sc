@@ -1,26 +1,47 @@
 {
-  "location": "Sinjai",
   "slug": "sinjai",
+  "location": "Sinjai",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251209",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 20.64,
-    "T2M_MIN": 23.23,
-    "T2M_MAX": 28.88,
-    "RH2M": 87.85,
-    "WS2M": 0.64,
-    "WD2M": 289.2,
-    "PS": 96.82,
-    "ALLSKY_SFC_SW_DWN": 11.46
+    "PRECTOTCORR": 5.11,
+    "T2M_MIN": 23.14,
+    "T2M_MAX": 27.85,
+    "RH2M": 87.17,
+    "WS2M": 0.57,
+    "WD2M": 270.8,
+    "PS": 96.92,
+    "ALLSKY_SFC_SW_DWN": 22.0
   },
   "prediction": {
-    "probabilitas": 0.9411184829789951
+    "probabilitas": 0.003216648003104334,
+    "percentage": 0.3
   },
   "interpretasi": {
-    "status": "Berpotensi Banjir",
-    "level": "tinggi",
-    "warna": "red"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:36:58.616389"
+  "updated_at": "2025-12-16T13:06:18.774239Z",
+  "coordinates": {
+    "lat": -5.1167,
+    "lon": 120.25
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

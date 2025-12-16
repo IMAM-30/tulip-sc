@@ -1,0 +1,44 @@
+{
+  "slug": "campa",
+  "location": "Campa",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 8.4,
+    "T2M_MIN": 23.79,
+    "T2M_MAX": 29.28,
+    "RH2M": 86.8,
+    "WS2M": 0.92,
+    "WD2M": 263.7,
+    "PS": 98.68,
+    "ALLSKY_SFC_SW_DWN": 22.1
+  },
+  "prediction": {
+    "probabilitas": 0.031946160323318665,
+    "percentage": 3.2
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
+  },
+  "updated_at": "2025-12-16T12:41:46.280854Z",
+  "coordinates": {
+    "lat": -4.38,
+    "lon": 119.92
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ]
+  }
+}

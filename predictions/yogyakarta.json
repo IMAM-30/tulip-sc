@@ -1,0 +1,47 @@
+{
+  "slug": "yogyakarta",
+  "location": "Yogyakarta",
+  "group": "default",
+  "parent": "Nasional",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 6.03,
+    "T2M_MIN": 25.08,
+    "T2M_MAX": 29.04,
+    "RH2M": 84.57,
+    "WS2M": 1.74,
+    "WD2M": 216.1,
+    "PS": 98.78,
+    "ALLSKY_SFC_SW_DWN": 17.43
+  },
+  "prediction": {
+    "probabilitas": 0.005031380065145426,
+    "percentage": 0.5
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
+  },
+  "updated_at": "2025-12-16T12:52:52.824122Z",
+  "coordinates": {
+    "lat": -7.7956,
+    "lon": 110.3695
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
+}

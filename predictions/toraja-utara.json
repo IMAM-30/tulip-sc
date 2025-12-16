@@ -1,26 +1,47 @@
 {
-  "location": "Toraja Utara",
   "slug": "toraja-utara",
+  "location": "Toraja Utara",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251209",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 11.83,
-    "T2M_MIN": 20.31,
-    "T2M_MAX": 24.87,
-    "RH2M": 89.5,
-    "WS2M": 0.38,
-    "WD2M": 137.4,
-    "PS": 90.7,
-    "ALLSKY_SFC_SW_DWN": 7.74
+    "PRECTOTCORR": 8.74,
+    "T2M_MIN": 20.34,
+    "T2M_MAX": 25.4,
+    "RH2M": 89.51,
+    "WS2M": 0.4,
+    "WD2M": 123.6,
+    "PS": 90.78,
+    "ALLSKY_SFC_SW_DWN": 17.47
   },
   "prediction": {
-    "probabilitas": 0.4053504740685385
+    "probabilitas": 0.04602001641558464,
+    "percentage": 4.6
   },
   "interpretasi": {
-    "status": "Waspada",
-    "level": "sedang",
-    "warna": "yellow"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:37:05.745925"
+  "updated_at": "2025-12-16T13:07:04.843990Z",
+  "coordinates": {
+    "lat": -2.8333,
+    "lon": 119.8333
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

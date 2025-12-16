@@ -1,26 +1,47 @@
 {
-  "location": "Tana Toraja",
   "slug": "tana-toraja",
+  "location": "Tana Toraja",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251209",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 11.83,
-    "T2M_MIN": 20.31,
-    "T2M_MAX": 24.87,
-    "RH2M": 89.5,
-    "WS2M": 0.38,
-    "WD2M": 137.4,
-    "PS": 90.7,
-    "ALLSKY_SFC_SW_DWN": 6.98
+    "PRECTOTCORR": 8.74,
+    "T2M_MIN": 20.34,
+    "T2M_MAX": 25.4,
+    "RH2M": 89.51,
+    "WS2M": 0.4,
+    "WD2M": 123.6,
+    "PS": 90.78,
+    "ALLSKY_SFC_SW_DWN": 16.16
   },
   "prediction": {
-    "probabilitas": 0.4054667057914313
+    "probabilitas": 0.046093048650177534,
+    "percentage": 4.6
   },
   "interpretasi": {
-    "status": "Waspada",
-    "level": "sedang",
-    "warna": "yellow"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:37:04.195413"
+  "updated_at": "2025-12-16T13:06:53.506163Z",
+  "coordinates": {
+    "lat": -3.0833,
+    "lon": 119.75
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

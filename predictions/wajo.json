@@ -1,26 +1,47 @@
 {
-  "location": "Wajo",
   "slug": "wajo",
+  "location": "Wajo",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251209",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 12.95,
-    "T2M_MIN": 23.76,
-    "T2M_MAX": 29.51,
-    "RH2M": 87.12,
-    "WS2M": 1.29,
-    "WD2M": 284.1,
-    "PS": 98.57,
-    "ALLSKY_SFC_SW_DWN": 10.66
+    "PRECTOTCORR": 10.11,
+    "T2M_MIN": 23.87,
+    "T2M_MAX": 29.83,
+    "RH2M": 86.2,
+    "WS2M": 1.14,
+    "WD2M": 257.0,
+    "PS": 98.64,
+    "ALLSKY_SFC_SW_DWN": 18.67
   },
   "prediction": {
-    "probabilitas": 0.49107181230985425
+    "probabilitas": 0.09742196775596507,
+    "percentage": 9.7
   },
   "interpretasi": {
-    "status": "Waspada",
-    "level": "sedang",
-    "warna": "yellow"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:37:07.544135"
+  "updated_at": "2025-12-16T13:07:25.451422Z",
+  "coordinates": {
+    "lat": -4.0333,
+    "lon": 120.1833
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

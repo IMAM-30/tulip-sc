@@ -1,26 +1,47 @@
 {
-  "location": "Parepare",
   "slug": "parepare",
+  "location": "Parepare",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251209",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 16.81,
-    "T2M_MIN": 27.06,
-    "T2M_MAX": 28.42,
-    "RH2M": 80.42,
-    "WS2M": 2.88,
-    "WD2M": 291.4,
-    "PS": 99.97,
-    "ALLSKY_SFC_SW_DWN": 9.1
+    "PRECTOTCORR": 7.54,
+    "T2M_MIN": 27.08,
+    "T2M_MAX": 29.05,
+    "RH2M": 78.12,
+    "WS2M": 2.32,
+    "WD2M": 267.4,
+    "PS": 100.04,
+    "ALLSKY_SFC_SW_DWN": 22.1
   },
   "prediction": {
-    "probabilitas": 0.7614785848967159
+    "probabilitas": 0.010044648298910957,
+    "percentage": 1.0
   },
   "interpretasi": {
-    "status": "Berpotensi Banjir",
-    "level": "tinggi",
-    "warna": "red"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:36:32.691998"
+  "updated_at": "2025-12-16T13:06:09.984757Z",
+  "coordinates": {
+    "lat": -4.0096,
+    "lon": 119.6236
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

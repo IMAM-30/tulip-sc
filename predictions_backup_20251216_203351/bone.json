@@ -1,0 +1,26 @@
+{
+  "location": "Bone",
+  "slug": "bone",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 12.73,
+    "T2M_MIN": 28.04,
+    "T2M_MAX": 29.98,
+    "RH2M": 76.1,
+    "WS2M": 2.77,
+    "WD2M": 293.4,
+    "PS": 100.61,
+    "ALLSKY_SFC_SW_DWN": 10.66
+  },
+  "prediction": {
+    "probabilitas": 0.38319135519811104
+  },
+  "interpretasi": {
+    "status": "Waspada",
+    "level": "sedang",
+    "warna": "yellow"
+  },
+  "updated_at": "2025-12-14T17:36:39.557766"
+}

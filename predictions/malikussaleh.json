@@ -1,0 +1,44 @@
+{
+  "slug": "malikussaleh",
+  "location": "Malikussaleh",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 19.23,
+    "T2M_MIN": 21.35,
+    "T2M_MAX": 26.49,
+    "RH2M": 86.96,
+    "WS2M": 0.86,
+    "WD2M": 41.0,
+    "PS": 94.94,
+    "ALLSKY_SFC_SW_DWN": 18.79
+  },
+  "prediction": {
+    "probabilitas": 0.9864673847907774,
+    "percentage": 98.6
+  },
+  "interpretasi": {
+    "status": "Berpotensi Banjir",
+    "warna": "red",
+    "level": "high"
+  },
+  "updated_at": "2025-12-16T12:42:10.402661Z",
+  "coordinates": {
+    "lat": 5.2,
+    "lon": 96.7
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "sidenreng-rappang",
+  "location": "Sidenreng Rappang",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 10.11,
+    "T2M_MIN": 23.87,
+    "T2M_MAX": 29.83,
+    "RH2M": 86.2,
+    "WS2M": 1.14,
+    "WD2M": 257.0,
+    "PS": 98.64,
+    "ALLSKY_SFC_SW_DWN": 16.16
+  },
+  "prediction": {
+    "probabilitas": 0.09770238306551415,
+    "percentage": 9.8
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
+  },
+  "updated_at": "2025-12-16T12:53:20.560160Z",
+  "coordinates": {
+    "lat": -3.9333,
+    "lon": 119.9
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "medan",
+  "location": "Medan",
+  "group": "default",
+  "parent": "Nasional",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 2.95,
+    "T2M_MIN": 21.78,
+    "T2M_MAX": 27.68,
+    "RH2M": 87.12,
+    "WS2M": 1.17,
+    "WD2M": 328.5,
+    "PS": 97.68,
+    "ALLSKY_SFC_SW_DWN": 17.65
+  },
+  "prediction": {
+    "probabilitas": 0.0007061974668572465,
+    "percentage": 0.1
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
+  },
+  "updated_at": "2025-12-16T12:52:39.657753Z",
+  "coordinates": {
+    "lat": 3.5952,
+    "lon": 98.6722
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
+}

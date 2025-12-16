@@ -1,26 +1,47 @@
 {
-  "location": "Bogor",
   "slug": "bogor",
+  "location": "Bogor",
   "group": "default",
   "parent": "Nasional",
-  "date": "20251209",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 3.24,
-    "T2M_MIN": 21.7,
-    "T2M_MAX": 29.77,
-    "RH2M": 82.21,
-    "WS2M": 1.13,
-    "WD2M": 239.9,
-    "PS": 97.07,
-    "ALLSKY_SFC_SW_DWN": 14.57
+    "PRECTOTCORR": 25.5,
+    "T2M_MIN": 23.02,
+    "T2M_MAX": 28.29,
+    "RH2M": 89.3,
+    "WS2M": 0.88,
+    "WD2M": 271.3,
+    "PS": 97.12,
+    "ALLSKY_SFC_SW_DWN": 10.21
   },
   "prediction": {
-    "probabilitas": 0.023026353062382793
+    "probabilitas": 0.9998943081724456,
+    "percentage": 100.0
   },
   "interpretasi": {
-    "status": "Aman",
-    "level": "rendah",
-    "warna": "green"
+    "status": "Berpotensi Banjir",
+    "warna": "red",
+    "level": "high"
   },
-  "updated_at": "2025-12-14T17:36:24.763210"
+  "updated_at": "2025-12-16T13:06:06.652710Z",
+  "coordinates": {
+    "lat": -6.5971,
+    "lon": 106.806
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

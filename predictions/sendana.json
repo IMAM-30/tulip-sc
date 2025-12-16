@@ -1,0 +1,47 @@
+{
+  "slug": "sendana",
+  "location": "Sendana",
+  "group": "kecamatan",
+  "parent": "Parepare",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 7.54,
+    "T2M_MIN": 27.08,
+    "T2M_MAX": 29.05,
+    "RH2M": 78.12,
+    "WS2M": 2.32,
+    "WD2M": 267.4,
+    "PS": 100.04,
+    "ALLSKY_SFC_SW_DWN": 16.16
+  },
+  "prediction": {
+    "probabilitas": 0.010119874827447166,
+    "percentage": 1.0
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
+  },
+  "updated_at": "2025-12-16T12:53:48.470832Z",
+  "coordinates": {
+    "lat": -3.995,
+    "lon": 119.618
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
+}

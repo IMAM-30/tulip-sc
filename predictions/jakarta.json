@@ -1,0 +1,47 @@
+{
+  "slug": "jakarta",
+  "location": "Jakarta",
+  "group": "default",
+  "parent": "Nasional",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 15.8,
+    "T2M_MIN": 25.8,
+    "T2M_MAX": 28.49,
+    "RH2M": 82.91,
+    "WS2M": 1.98,
+    "WD2M": 266.0,
+    "PS": 100.25,
+    "ALLSKY_SFC_SW_DWN": 10.21
+  },
+  "prediction": {
+    "probabilitas": 0.8484164107566903,
+    "percentage": 84.8
+  },
+  "interpretasi": {
+    "status": "Berpotensi Banjir",
+    "warna": "red",
+    "level": "high"
+  },
+  "updated_at": "2025-12-16T12:52:34.133053Z",
+  "coordinates": {
+    "lat": -6.2088,
+    "lon": 106.8456
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
+}

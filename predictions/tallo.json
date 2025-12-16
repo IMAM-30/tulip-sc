@@ -1,0 +1,47 @@
+{
+  "slug": "tallo",
+  "location": "Tallo",
+  "group": "kecamatan",
+  "parent": "Makassar",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 4.14,
+    "T2M_MIN": 26.59,
+    "T2M_MAX": 28.64,
+    "RH2M": 77.89,
+    "WS2M": 1.37,
+    "WD2M": 275.6,
+    "PS": 99.5,
+    "ALLSKY_SFC_SW_DWN": 23.14
+  },
+  "prediction": {
+    "probabilitas": 0.0008551846686884419,
+    "percentage": 0.1
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
+  },
+  "updated_at": "2025-12-16T12:54:02.174967Z",
+  "coordinates": {
+    "lat": -5.12,
+    "lon": 119.44
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
+}

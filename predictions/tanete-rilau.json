@@ -1,26 +1,47 @@
 {
-  "location": "Tanete Rilau",
   "slug": "tanete-rilau",
-  "group": "kecamatan",
-  "parent": "Barru",
-  "date": "20251209",
+  "location": "Tanete Rilau",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 19.87,
-    "T2M_MIN": 27.01,
-    "T2M_MAX": 28.29,
-    "RH2M": 79.63,
-    "WS2M": 2.49,
-    "WD2M": 293.2,
-    "PS": 99.93,
-    "ALLSKY_SFC_SW_DWN": 9.1
+    "PRECTOTCORR": 7.78,
+    "T2M_MIN": 27.09,
+    "T2M_MAX": 28.69,
+    "RH2M": 77.4,
+    "WS2M": 1.77,
+    "WD2M": 270.6,
+    "PS": 100.01,
+    "ALLSKY_SFC_SW_DWN": 22.1
   },
   "prediction": {
-    "probabilitas": 0.9036610547247884
+    "probabilitas": 0.011393213428813016,
+    "percentage": 1.1
   },
   "interpretasi": {
-    "status": "Berpotensi Banjir",
-    "level": "tinggi",
-    "warna": "red"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:37:33.187379"
+  "updated_at": "2025-12-16T13:07:27.278106Z",
+  "coordinates": {
+    "lat": -4.47,
+    "lon": 119.57
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

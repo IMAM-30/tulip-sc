@@ -1,26 +1,47 @@
 {
-  "location": "Takalar",
   "slug": "takalar",
+  "location": "Takalar",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251209",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 17.86,
-    "T2M_MIN": 26.83,
-    "T2M_MAX": 28.83,
-    "RH2M": 78.89,
-    "WS2M": 2.1,
-    "WD2M": 285.1,
-    "PS": 99.67,
-    "ALLSKY_SFC_SW_DWN": 10.19
+    "PRECTOTCORR": 2.05,
+    "T2M_MIN": 26.66,
+    "T2M_MAX": 28.93,
+    "RH2M": 77.96,
+    "WS2M": 1.82,
+    "WD2M": 287.0,
+    "PS": 99.76,
+    "ALLSKY_SFC_SW_DWN": 23.14
   },
   "prediction": {
-    "probabilitas": 0.8138018755060443
+    "probabilitas": 0.00019145407187705747,
+    "percentage": 0.0
   },
   "interpretasi": {
-    "status": "Berpotensi Banjir",
-    "level": "tinggi",
-    "warna": "red"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:37:02.660492"
+  "updated_at": "2025-12-16T13:06:36.549316Z",
+  "coordinates": {
+    "lat": -5.4167,
+    "lon": 119.4833
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }

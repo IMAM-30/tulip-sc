@@ -1,0 +1,26 @@
+{
+  "location": "Enrekang",
+  "slug": "enrekang",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 11.59,
+    "T2M_MIN": 21.56,
+    "T2M_MAX": 25.71,
+    "RH2M": 89.74,
+    "WS2M": 0.46,
+    "WD2M": 256.9,
+    "PS": 94.71,
+    "ALLSKY_SFC_SW_DWN": 6.98
+  },
+  "prediction": {
+    "probabilitas": 0.39681862751625036
+  },
+  "interpretasi": {
+    "status": "Waspada",
+    "level": "sedang",
+    "warna": "yellow"
+  },
+  "updated_at": "2025-12-14T17:36:43.398917"
+}

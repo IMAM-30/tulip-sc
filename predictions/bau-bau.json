@@ -1,0 +1,44 @@
+{
+  "slug": "bau-bau",
+  "location": "Bau-Bau",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 6.07,
+    "T2M_MIN": 26.97,
+    "T2M_MAX": 29.54,
+    "RH2M": 78.29,
+    "WS2M": 1.46,
+    "WD2M": 228.0,
+    "PS": 99.85,
+    "ALLSKY_SFC_SW_DWN": 9.15
+  },
+  "prediction": {
+    "probabilitas": 0.003422820852726439,
+    "percentage": 0.3
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
+  },
+  "updated_at": "2025-12-16T12:41:38.749498Z",
+  "coordinates": {
+    "lat": -5.47,
+    "lon": 122.63
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ]
+  }
+}

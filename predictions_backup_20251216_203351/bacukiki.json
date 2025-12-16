@@ -1,0 +1,26 @@
+{
+  "location": "Bacukiki",
+  "slug": "bacukiki",
+  "group": "kecamatan",
+  "parent": "Parepare",
+  "date": "20251209",
+  "nasa": {
+    "PRECTOTCORR": 16.81,
+    "T2M_MIN": 27.06,
+    "T2M_MAX": 28.42,
+    "RH2M": 80.42,
+    "WS2M": 2.88,
+    "WD2M": 291.4,
+    "PS": 99.97,
+    "ALLSKY_SFC_SW_DWN": 9.1
+  },
+  "prediction": {
+    "probabilitas": 0.7614785848967159
+  },
+  "interpretasi": {
+    "status": "Berpotensi Banjir",
+    "level": "tinggi",
+    "warna": "red"
+  },
+  "updated_at": "2025-12-14T17:37:09.306245"
+}

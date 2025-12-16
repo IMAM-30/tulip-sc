@@ -1,0 +1,47 @@
+{
+  "slug": "selayar",
+  "location": "Selayar",
+  "group": "sulsel",
+  "parent": "Sulawesi Selatan",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 4.91,
+    "T2M_MIN": 27.66,
+    "T2M_MAX": 29.36,
+    "RH2M": 75.92,
+    "WS2M": 2.07,
+    "WD2M": 254.7,
+    "PS": 100.55,
+    "ALLSKY_SFC_SW_DWN": 25.52
+  },
+  "prediction": {
+    "probabilitas": 0.001275616789360017,
+    "percentage": 0.1
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
+  },
+  "updated_at": "2025-12-16T12:53:16.011164Z",
+  "coordinates": {
+    "lat": -6.0833,
+    "lon": 120.5
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
+}

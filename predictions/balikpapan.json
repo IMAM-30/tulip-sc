@@ -1,0 +1,47 @@
+{
+  "slug": "balikpapan",
+  "location": "Balikpapan",
+  "group": "default",
+  "parent": "Nasional",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 13.72,
+    "T2M_MIN": 25.05,
+    "T2M_MAX": 30.05,
+    "RH2M": 80.89,
+    "WS2M": 0.63,
+    "WD2M": 277.3,
+    "PS": 100.2,
+    "ALLSKY_SFC_SW_DWN": 8.6
+  },
+  "prediction": {
+    "probabilitas": 0.5097279589846878,
+    "percentage": 51.0
+  },
+  "interpretasi": {
+    "status": "Waspada",
+    "warna": "yellow",
+    "level": "medium"
+  },
+  "updated_at": "2025-12-16T12:52:49.630962Z",
+  "coordinates": {
+    "lat": -1.2426,
+    "lon": 116.8947
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
+}

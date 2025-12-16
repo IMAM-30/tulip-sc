@@ -1,0 +1,47 @@
+{
+  "slug": "semarang",
+  "location": "Semarang",
+  "group": "default",
+  "parent": "Nasional",
+  "date": "20251211",
+  "nasa": {
+    "PRECTOTCORR": 10.87,
+    "T2M_MIN": 24.33,
+    "T2M_MAX": 29.08,
+    "RH2M": 85.21,
+    "WS2M": 0.73,
+    "WD2M": 277.5,
+    "PS": 98.84,
+    "ALLSKY_SFC_SW_DWN": 15.54
+  },
+  "prediction": {
+    "probabilitas": 0.15295356404549398,
+    "percentage": 15.3
+  },
+  "interpretasi": {
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
+  },
+  "updated_at": "2025-12-16T12:52:45.872572Z",
+  "coordinates": {
+    "lat": -6.9667,
+    "lon": 110.4167
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
+}

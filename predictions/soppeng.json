@@ -1,26 +1,47 @@
 {
-  "location": "Soppeng",
   "slug": "soppeng",
+  "location": "Soppeng",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251209",
+  "date": "20251211",
   "nasa": {
-    "PRECTOTCORR": 16.23,
-    "T2M_MIN": 23.48,
-    "T2M_MAX": 30.09,
-    "RH2M": 87.25,
-    "WS2M": 1.15,
-    "WD2M": 288.2,
-    "PS": 98.6,
-    "ALLSKY_SFC_SW_DWN": 9.1
+    "PRECTOTCORR": 8.4,
+    "T2M_MIN": 23.79,
+    "T2M_MAX": 29.28,
+    "RH2M": 86.8,
+    "WS2M": 0.92,
+    "WD2M": 263.7,
+    "PS": 98.68,
+    "ALLSKY_SFC_SW_DWN": 22.1
   },
   "prediction": {
-    "probabilitas": 0.7593083102369502
+    "probabilitas": 0.031946160323318665,
+    "percentage": 3.2
   },
   "interpretasi": {
-    "status": "Berpotensi Banjir",
-    "level": "tinggi",
-    "warna": "red"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-14T17:37:01.013414"
+  "updated_at": "2025-12-16T13:06:40.295558Z",
+  "coordinates": {
+    "lat": -4.3833,
+    "lon": 119.9167
+  },
+  "metadata": {
+    "model_version": "v1.0",
+    "features_used": [
+      "PRECTOTCORR",
+      "T2M_MIN",
+      "T2M_MAX",
+      "RH2M",
+      "WS2M",
+      "WD2M",
+      "PS",
+      "ALLSKY_SFC_SW_DWN"
+    ],
+    "data_source": "NASA POWER",
+    "data_age_days": 5
+  },
+  "data_age_days": 5
 }
