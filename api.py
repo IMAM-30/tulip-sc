@@ -1,12 +1,74 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
-import os, json
+import os, json, threading, time, schedule
+from datetime import datetime
+import subprocess
 
 app = Flask(__name__)
 CORS(app)
 
 PREDICTION_PATH = "predictions"
 
+# ========== AUTO-UPDATE MECHANISM ==========
+UPDATE_INTERVAL_HOURS = 6  # Update setiap 6 jam
+LAST_UPDATE = None
+UPDATE_IN_PROGRESS = False
+
+def update_predictions_background():
+    """Background job to update predictions"""
+    global UPDATE_IN_PROGRESS, LAST_UPDATE
+    
+    if UPDATE_IN_PROGRESS:
+        print("⚠️ Update already in progress, skipping...")
+        return
+    
+    UPDATE_IN_PROGRESS = True
+    try:
+        print(f"🔄 [{datetime.now()}] Starting prediction update...")
+        
+        # Jalankan update script
+        script_path = os.path.join(os.path.dirname(__file__), "update_predictions.py")
+        
+        # Method 1: Menggunakan subprocess (lebih reliable)
+        result = subprocess.run(
+            ["python", script_path],
+            capture_output=True,
+            text=True,
+            timeout=300  # 5 minutes timeout
+        )
+        
+        if result.returncode == 0:
+            print(f"✅ [{datetime.now()}] Update successful!")
+            print("Output:", result.stdout[:500])  # Print first 500 chars
+            LAST_UPDATE = datetime.now().isoformat()
+        else:
+            print(f"❌ [{datetime.now()}] Update failed!")
+            print("Error:", result.stderr[:500])
+            
+    except subprocess.TimeoutExpired:
+        print(f"⏰ [{datetime.now()}] Update timeout after 5 minutes!")
+    except Exception as e:
+        print(f"🔥 [{datetime.now()}] Update error: {e}")
+    finally:
+        UPDATE_IN_PROGRESS = False
+
+def scheduler_worker():
+    """Background scheduler thread"""
+    print(f"⏰ Scheduler started. Will update every {UPDATE_INTERVAL_HOURS} hours")
+    
+    # Schedule update setiap X jam
+    schedule.every(UPDATE_INTERVAL_HOURS).hours.do(update_predictions_background)
+    
+    # Jalankan sekali saat startup (tunggu 30 detik agar API ready)
+    time.sleep(30)
+    update_predictions_background()
+    
+    # Main loop
+    while True:
+        schedule.run_pending()
+        time.sleep(60)  # Check every minute
+
+# ========== API ENDPOINTS ==========
 def load_prediction(slug):
     path = os.path.join(PREDICTION_PATH, f"{slug}.json")
     if not os.path.exists(path):
@@ -23,31 +85,118 @@ def list_predictions():
 
 @app.route("/")
 def health():
-    return jsonify({
+    status_info = {
         "status": "ok",
-        "mode": "read-only",
-        "service": "TULIP Smart Climate API"
-    })
+        "mode": "auto-update-enabled",
+        "service": "TULIP Smart Climate API",
+        "update_interval_hours": UPDATE_INTERVAL_HOURS,
+        "last_update": LAST_UPDATE,
+        "update_in_progress": UPDATE_IN_PROGRESS,
+        "total_locations": len(list_predictions()),
+        "endpoints": {
+            "/": "Health check",
+            "/locations": "List all locations",
+            "/predict/<slug>": "Get prediction for location",
+            "/force-update": "Force update predictions",
+            "/update-status": "Check update status"
+        }
+    }
+    return jsonify(status_info)
 
 @app.route("/locations")
 def locations():
+    locations_list = list_predictions()
     return jsonify({
-        "jumlah": len(list_predictions()),
-        "locations": list_predictions()
+        "jumlah": len(locations_list),
+        "locations": locations_list,
+        "last_update": LAST_UPDATE
     })
 
 @app.route("/predict/<slug>")
 def predict_slug(slug):
+    # Cek apakah slug valid
+    if not slug or slug == "undefined":
+        return jsonify({"error": "Invalid location slug"}), 400
+    
     data = load_prediction(slug)
     if not data:
+        # Try to find alternative slug format
+        all_locations = list_predictions()
+        possible_matches = [loc for loc in all_locations if slug in loc]
+        
+        if possible_matches:
+            return jsonify({
+                "error": "Location not found exactly, but similar locations exist",
+                "requested_slug": slug,
+                "suggestions": possible_matches[:5]
+            }), 404
+        
         return jsonify({
-            "error": "Prediksi belum tersedia",
-            "slug": slug
+            "error": "Prediction not available for this location",
+            "slug": slug,
+            "available_locations": all_locations[:10]  # Show first 10 only
         }), 404
+    
+    # Add metadata
+    data["api_version"] = "2.0-auto-update"
+    data["retrieved_at"] = datetime.now().isoformat()
+    
     return jsonify(data)
+
+@app.route("/force-update", methods=["POST"])
+def force_update():
+    """Manual trigger untuk update"""
+    if UPDATE_IN_PROGRESS:
+        return jsonify({
+            "status": "busy",
+            "message": "Update already in progress",
+            "last_update": LAST_UPDATE
+        }), 409
+    
+    # Start update in background thread
+    thread = threading.Thread(target=update_predictions_background, daemon=True)
+    thread.start()
+    
+    return jsonify({
+        "status": "started",
+        "message": "Update started in background",
+        "note": "Check /update-status for progress"
+    })
+
+@app.route("/update-status")
+def update_status():
+    """Check update status"""
+    return jsonify({
+        "last_update": LAST_UPDATE,
+        "update_in_progress": UPDATE_IN_PROGRESS,
+        "update_interval_hours": UPDATE_INTERVAL_HOURS,
+        "next_update_in": None,  # Bisa dihitung dari schedule
+        "total_predictions": len(list_predictions())
+    })
+
+# ========== STARTUP ==========
+def initialize_background_tasks():
+    """Start background scheduler"""
+    print("🚀 Initializing TULIP Smart Climate API with auto-update...")
+    
+    # Start scheduler in background thread
+    scheduler_thread = threading.Thread(target=scheduler_worker, daemon=True)
+    scheduler_thread.start()
+    
+    print(f"📅 Auto-update scheduled every {UPDATE_INTERVAL_HOURS} hours")
+    print("📊 Available endpoints:")
+    print("  - GET  /              # Health check")
+    print("  - GET  /locations     # List locations")
+    print("  - GET  /predict/<slug> # Get prediction")
+    print("  - POST /force-update  # Manual update")
+    print("  - GET  /update-status # Check update status")
+
+# Start background tasks when Flask app runs
+with app.app_context():
+    initialize_background_tasks()
 
 if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 8080))
-    app.run(host="0.0.0.0", port=port)
- 
+    print(f"🌐 Starting server on port {port}")
+    app.run(host="0.0.0.0", port=port, debug=False)
