@@ -3,27 +3,27 @@
   "location": "Bekasi",
   "group": "default",
   "parent": "Nasional",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 15.8,
-    "T2M_MIN": 25.8,
-    "T2M_MAX": 28.49,
-    "RH2M": 82.91,
-    "WS2M": 1.98,
-    "WD2M": 266.0,
-    "PS": 100.25,
-    "ALLSKY_SFC_SW_DWN": 10.21
+    "PRECTOTCORR": 10.62,
+    "T2M_MIN": 25.44,
+    "T2M_MAX": 29.71,
+    "RH2M": 81.92,
+    "WS2M": 2.18,
+    "WD2M": 252.8,
+    "PS": 100.13,
+    "ALLSKY_SFC_SW_DWN": 19.41
   },
   "prediction": {
-    "probabilitas": 0.8484164107566903,
-    "percentage": 84.8
+    "probabilitas": 0.1055557372770524,
+    "percentage": 10.6
   },
   "interpretasi": {
-    "status": "Berpotensi Banjir",
-    "warna": "red",
-    "level": "high"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-16T13:06:04.965044Z",
+  "updated_at": "2025-12-17T08:02:55.025063Z",
   "coordinates": {
     "lat": -6.238,
     "lon": 106.9756

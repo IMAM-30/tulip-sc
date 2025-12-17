@@ -3,27 +3,27 @@
   "location": "Cempa",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 8.4,
-    "T2M_MIN": 23.79,
-    "T2M_MAX": 29.28,
-    "RH2M": 86.8,
-    "WS2M": 0.92,
-    "WD2M": 263.7,
-    "PS": 98.68,
-    "ALLSKY_SFC_SW_DWN": 22.1
+    "PRECTOTCORR": 9.94,
+    "T2M_MIN": 23.55,
+    "T2M_MAX": 29.99,
+    "RH2M": 86.73,
+    "WS2M": 1.33,
+    "WD2M": 275.6,
+    "PS": 98.59,
+    "ALLSKY_SFC_SW_DWN": 13.78
   },
   "prediction": {
-    "probabilitas": 0.031946160323318665,
-    "percentage": 3.2
+    "probabilitas": 0.0915138911543001,
+    "percentage": 9.2
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:07:01.906517Z",
+  "updated_at": "2025-12-17T08:03:55.590103Z",
   "coordinates": {
     "lat": -4.38,
     "lon": 119.92

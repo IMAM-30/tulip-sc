@@ -3,27 +3,27 @@
   "location": "Gowa",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 2.61,
-    "T2M_MIN": 24.87,
-    "T2M_MAX": 28.25,
-    "RH2M": 82.05,
-    "WS2M": 1.36,
-    "WD2M": 270.9,
-    "PS": 98.16,
-    "ALLSKY_SFC_SW_DWN": 23.14
+    "PRECTOTCORR": 9.8,
+    "T2M_MIN": 24.57,
+    "T2M_MAX": 29.46,
+    "RH2M": 82.81,
+    "WS2M": 1.92,
+    "WD2M": 292.2,
+    "PS": 98.06,
+    "ALLSKY_SFC_SW_DWN": 14.12
   },
   "prediction": {
-    "probabilitas": 0.0003749938568015047,
-    "percentage": 0.0
+    "probabilitas": 0.06711187442740246,
+    "percentage": 6.7
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:07:00.079974Z",
+  "updated_at": "2025-12-17T08:03:54.009454Z",
   "coordinates": {
     "lat": -5.3167,
     "lon": 119.75

@@ -3,27 +3,27 @@
   "location": "Ujung",
   "group": "kecamatan",
   "parent": "Parepare",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 7.54,
-    "T2M_MIN": 27.08,
-    "T2M_MAX": 29.05,
-    "RH2M": 78.12,
-    "WS2M": 2.32,
-    "WD2M": 267.4,
-    "PS": 100.04,
-    "ALLSKY_SFC_SW_DWN": 22.1
+    "PRECTOTCORR": 7.65,
+    "T2M_MIN": 27.28,
+    "T2M_MAX": 29.14,
+    "RH2M": 79.05,
+    "WS2M": 2.83,
+    "WD2M": 284.1,
+    "PS": 99.96,
+    "ALLSKY_SFC_SW_DWN": 13.78
   },
   "prediction": {
-    "probabilitas": 0.010044648298910957,
-    "percentage": 1.0
+    "probabilitas": 0.011925932597806466,
+    "percentage": 1.2
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:07:18.360535Z",
+  "updated_at": "2025-12-17T08:04:13.058556Z",
   "coordinates": {
     "lat": -4.009,
     "lon": 119.623

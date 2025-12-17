@@ -3,27 +3,27 @@
   "location": "Pangkep",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 4.14,
-    "T2M_MIN": 26.59,
-    "T2M_MAX": 28.64,
-    "RH2M": 77.89,
-    "WS2M": 1.37,
-    "WD2M": 275.6,
-    "PS": 99.5,
-    "ALLSKY_SFC_SW_DWN": 22.1
+    "PRECTOTCORR": 11.6,
+    "T2M_MIN": 26.58,
+    "T2M_MAX": 28.67,
+    "RH2M": 80.25,
+    "WS2M": 2.53,
+    "WD2M": 310.2,
+    "PS": 99.41,
+    "ALLSKY_SFC_SW_DWN": 13.78
   },
   "prediction": {
-    "probabilitas": 0.0008563130016907258,
-    "percentage": 0.1
+    "probabilitas": 0.18879643338177166,
+    "percentage": 18.9
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:06:20.393684Z",
+  "updated_at": "2025-12-17T08:03:13.223394Z",
   "coordinates": {
     "lat": -4.8333,
     "lon": 119.5833

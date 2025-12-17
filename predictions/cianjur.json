@@ -3,27 +3,27 @@
   "location": "Cianjur",
   "group": "default",
   "parent": "Nasional",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 22.32,
-    "T2M_MIN": 22.31,
-    "T2M_MAX": 27.94,
-    "RH2M": 90.26,
-    "WS2M": 0.64,
-    "WD2M": 203.9,
-    "PS": 95.41,
-    "ALLSKY_SFC_SW_DWN": 12.74
+    "PRECTOTCORR": 5.91,
+    "T2M_MIN": 22.1,
+    "T2M_MAX": 26.76,
+    "RH2M": 88.71,
+    "WS2M": 0.84,
+    "WD2M": 200.9,
+    "PS": 95.33,
+    "ALLSKY_SFC_SW_DWN": 18.12
   },
   "prediction": {
-    "probabilitas": 0.9989607595863457,
-    "percentage": 99.9
+    "probabilitas": 0.0061532101183556665,
+    "percentage": 0.6
   },
   "interpretasi": {
-    "status": "Berpotensi Banjir",
-    "warna": "red",
-    "level": "high"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-16T13:06:08.219339Z",
+  "updated_at": "2025-12-17T08:02:58.195919Z",
   "coordinates": {
     "lat": -6.818,
     "lon": 107.14

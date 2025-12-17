@@ -3,27 +3,27 @@
   "location": "Toraja Utara",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 8.74,
-    "T2M_MIN": 20.34,
-    "T2M_MAX": 25.4,
-    "RH2M": 89.51,
-    "WS2M": 0.4,
-    "WD2M": 123.6,
-    "PS": 90.78,
-    "ALLSKY_SFC_SW_DWN": 17.47
+    "PRECTOTCORR": 15.07,
+    "T2M_MIN": 20.65,
+    "T2M_MAX": 25.45,
+    "RH2M": 88.91,
+    "WS2M": 0.33,
+    "WD2M": 140.4,
+    "PS": 90.7,
+    "ALLSKY_SFC_SW_DWN": 14.32
   },
   "prediction": {
-    "probabilitas": 0.04602001641558464,
-    "percentage": 4.6
+    "probabilitas": 0.8204129076389721,
+    "percentage": 82.0
   },
   "interpretasi": {
-    "status": "Aman",
-    "warna": "green",
-    "level": "low"
+    "status": "Berpotensi Banjir",
+    "warna": "red",
+    "level": "high"
   },
-  "updated_at": "2025-12-16T13:07:04.843990Z",
+  "updated_at": "2025-12-17T08:03:59.510240Z",
   "coordinates": {
     "lat": -2.8333,
     "lon": 119.8333

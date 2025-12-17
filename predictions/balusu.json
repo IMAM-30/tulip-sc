@@ -3,27 +3,27 @@
   "location": "Balusu",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 10.83,
-    "T2M_MIN": 21.7,
-    "T2M_MAX": 27.5,
-    "RH2M": 88.97,
-    "WS2M": 0.47,
-    "WD2M": 224.0,
-    "PS": 94.79,
-    "ALLSKY_SFC_SW_DWN": 16.16
+    "PRECTOTCORR": 11.42,
+    "T2M_MIN": 22.15,
+    "T2M_MAX": 26.53,
+    "RH2M": 90.34,
+    "WS2M": 0.42,
+    "WD2M": 230.6,
+    "PS": 94.71,
+    "ALLSKY_SFC_SW_DWN": 15.13
   },
   "prediction": {
-    "probabilitas": 0.1807661268199535,
-    "percentage": 18.1
+    "probabilitas": 0.2769308391342781,
+    "percentage": 27.7
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:06:38.074173Z",
+  "updated_at": "2025-12-17T08:03:30.756259Z",
   "coordinates": {
     "lat": -3.45,
     "lon": 119.85

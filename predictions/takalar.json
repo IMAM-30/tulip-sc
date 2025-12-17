@@ -3,27 +3,27 @@
   "location": "Takalar",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 2.05,
-    "T2M_MIN": 26.66,
-    "T2M_MAX": 28.93,
-    "RH2M": 77.96,
-    "WS2M": 1.82,
-    "WD2M": 287.0,
-    "PS": 99.76,
-    "ALLSKY_SFC_SW_DWN": 23.14
+    "PRECTOTCORR": 9.13,
+    "T2M_MIN": 26.61,
+    "T2M_MAX": 29.03,
+    "RH2M": 80.43,
+    "WS2M": 3.13,
+    "WD2M": 313.5,
+    "PS": 99.67,
+    "ALLSKY_SFC_SW_DWN": 14.12
   },
   "prediction": {
-    "probabilitas": 0.00019145407187705747,
-    "percentage": 0.0
+    "probabilitas": 0.03808141146014529,
+    "percentage": 3.8
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:06:36.549316Z",
+  "updated_at": "2025-12-17T08:03:28.715246Z",
   "coordinates": {
     "lat": -5.4167,
     "lon": 119.4833

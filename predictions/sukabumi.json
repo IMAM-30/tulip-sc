@@ -3,27 +3,27 @@
   "location": "Sukabumi",
   "group": "default",
   "parent": "Nasional",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 22.32,
-    "T2M_MIN": 22.31,
-    "T2M_MAX": 27.94,
-    "RH2M": 90.26,
-    "WS2M": 0.64,
-    "WD2M": 203.9,
-    "PS": 95.41,
-    "ALLSKY_SFC_SW_DWN": 10.21
+    "PRECTOTCORR": 5.91,
+    "T2M_MIN": 22.1,
+    "T2M_MAX": 26.76,
+    "RH2M": 88.71,
+    "WS2M": 0.84,
+    "WD2M": 200.9,
+    "PS": 95.33,
+    "ALLSKY_SFC_SW_DWN": 19.41
   },
   "prediction": {
-    "probabilitas": 0.9989640870935109,
-    "percentage": 99.9
+    "probabilitas": 0.006143208060271097,
+    "percentage": 0.6
   },
   "interpretasi": {
-    "status": "Berpotensi Banjir",
-    "warna": "red",
-    "level": "high"
+    "status": "Aman",
+    "warna": "green",
+    "level": "low"
   },
-  "updated_at": "2025-12-16T13:06:03.065307Z",
+  "updated_at": "2025-12-17T08:02:53.284604Z",
   "coordinates": {
     "lat": -6.9277,
     "lon": 106.93

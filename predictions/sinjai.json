@@ -3,27 +3,27 @@
   "location": "Sinjai",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 5.11,
-    "T2M_MIN": 23.14,
-    "T2M_MAX": 27.85,
-    "RH2M": 87.17,
-    "WS2M": 0.57,
-    "WD2M": 270.8,
-    "PS": 96.92,
-    "ALLSKY_SFC_SW_DWN": 22.0
+    "PRECTOTCORR": 12.37,
+    "T2M_MIN": 22.41,
+    "T2M_MAX": 29.02,
+    "RH2M": 87.68,
+    "WS2M": 0.97,
+    "WD2M": 282.6,
+    "PS": 96.83,
+    "ALLSKY_SFC_SW_DWN": 20.95
   },
   "prediction": {
-    "probabilitas": 0.003216648003104334,
-    "percentage": 0.3
+    "probabilitas": 0.3847601922657362,
+    "percentage": 38.5
   },
   "interpretasi": {
-    "status": "Aman",
-    "warna": "green",
-    "level": "low"
+    "status": "Waspada",
+    "warna": "yellow",
+    "level": "medium"
   },
-  "updated_at": "2025-12-16T13:06:18.774239Z",
+  "updated_at": "2025-12-17T08:03:11.563233Z",
   "coordinates": {
     "lat": -5.1167,
     "lon": 120.25

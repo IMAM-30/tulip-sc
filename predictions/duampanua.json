@@ -3,27 +3,27 @@
   "location": "Duampanua",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 10.11,
-    "T2M_MIN": 23.87,
-    "T2M_MAX": 29.83,
-    "RH2M": 86.2,
-    "WS2M": 1.14,
-    "WD2M": 257.0,
-    "PS": 98.64,
-    "ALLSKY_SFC_SW_DWN": 16.16
+    "PRECTOTCORR": 11.41,
+    "T2M_MIN": 23.92,
+    "T2M_MAX": 29.76,
+    "RH2M": 86.66,
+    "WS2M": 1.31,
+    "WD2M": 267.1,
+    "PS": 98.55,
+    "ALLSKY_SFC_SW_DWN": 15.13
   },
   "prediction": {
-    "probabilitas": 0.09770238306551415,
-    "percentage": 9.8
+    "probabilitas": 0.22468707359519607,
+    "percentage": 22.5
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:06:26.540137Z",
+  "updated_at": "2025-12-17T08:03:19.844048Z",
   "coordinates": {
     "lat": -3.92,
     "lon": 119.85

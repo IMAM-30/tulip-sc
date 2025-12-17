@@ -3,27 +3,27 @@
   "location": "Wajo",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 10.11,
-    "T2M_MIN": 23.87,
-    "T2M_MAX": 29.83,
-    "RH2M": 86.2,
-    "WS2M": 1.14,
-    "WD2M": 257.0,
-    "PS": 98.64,
-    "ALLSKY_SFC_SW_DWN": 18.67
+    "PRECTOTCORR": 11.41,
+    "T2M_MIN": 23.92,
+    "T2M_MAX": 29.76,
+    "RH2M": 86.66,
+    "WS2M": 1.31,
+    "WD2M": 267.1,
+    "PS": 98.55,
+    "ALLSKY_SFC_SW_DWN": 20.61
   },
   "prediction": {
-    "probabilitas": 0.09742196775596507,
-    "percentage": 9.7
+    "probabilitas": 0.2234780554961574,
+    "percentage": 22.3
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:07:25.451422Z",
+  "updated_at": "2025-12-17T08:04:18.938280Z",
   "coordinates": {
     "lat": -4.0333,
     "lon": 120.1833

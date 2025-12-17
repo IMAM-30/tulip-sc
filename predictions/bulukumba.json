@@ -3,27 +3,27 @@
   "location": "Bulukumba",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 2.61,
-    "T2M_MIN": 24.87,
-    "T2M_MAX": 28.25,
-    "RH2M": 82.05,
-    "WS2M": 1.36,
-    "WD2M": 270.9,
-    "PS": 98.16,
-    "ALLSKY_SFC_SW_DWN": 22.0
+    "PRECTOTCORR": 9.8,
+    "T2M_MIN": 24.57,
+    "T2M_MAX": 29.46,
+    "RH2M": 82.81,
+    "WS2M": 1.92,
+    "WD2M": 292.2,
+    "PS": 98.06,
+    "ALLSKY_SFC_SW_DWN": 20.95
   },
   "prediction": {
-    "probabilitas": 0.00037553649396906134,
-    "percentage": 0.0
+    "probabilitas": 0.06657130665818516,
+    "percentage": 6.7
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:07:16.441172Z",
+  "updated_at": "2025-12-17T08:04:11.361483Z",
   "coordinates": {
     "lat": -5.5523,
     "lon": 120.1969

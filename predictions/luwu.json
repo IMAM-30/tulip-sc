@@ -3,27 +3,27 @@
   "location": "Luwu",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 8.85,
-    "T2M_MIN": 26.5,
-    "T2M_MAX": 28.52,
-    "RH2M": 78.67,
-    "WS2M": 1.38,
-    "WD2M": 185.0,
-    "PS": 99.21,
-    "ALLSKY_SFC_SW_DWN": 10.28
+    "PRECTOTCORR": 6.54,
+    "T2M_MIN": 26.48,
+    "T2M_MAX": 28.2,
+    "RH2M": 78.69,
+    "WS2M": 1.07,
+    "WD2M": 207.2,
+    "PS": 99.13,
+    "ALLSKY_SFC_SW_DWN": 15.79
   },
   "prediction": {
-    "probabilitas": 0.025120560468358484,
-    "percentage": 2.5
+    "probabilitas": 0.004904432956582207,
+    "percentage": 0.5
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:06:24.968575Z",
+  "updated_at": "2025-12-17T08:03:18.047115Z",
   "coordinates": {
     "lat": -3.3833,
     "lon": 120.3667

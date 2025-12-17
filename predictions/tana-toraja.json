@@ -3,27 +3,27 @@
   "location": "Tana Toraja",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 8.74,
-    "T2M_MIN": 20.34,
-    "T2M_MAX": 25.4,
-    "RH2M": 89.51,
-    "WS2M": 0.4,
-    "WD2M": 123.6,
-    "PS": 90.78,
-    "ALLSKY_SFC_SW_DWN": 16.16
+    "PRECTOTCORR": 15.07,
+    "T2M_MIN": 20.65,
+    "T2M_MAX": 25.45,
+    "RH2M": 88.91,
+    "WS2M": 0.33,
+    "WD2M": 140.4,
+    "PS": 90.7,
+    "ALLSKY_SFC_SW_DWN": 15.13
   },
   "prediction": {
-    "probabilitas": 0.046093048650177534,
-    "percentage": 4.6
+    "probabilitas": 0.820261424207088,
+    "percentage": 82.0
   },
   "interpretasi": {
-    "status": "Aman",
-    "warna": "green",
-    "level": "low"
+    "status": "Berpotensi Banjir",
+    "warna": "red",
+    "level": "high"
   },
-  "updated_at": "2025-12-16T13:06:53.506163Z",
+  "updated_at": "2025-12-17T08:03:47.145117Z",
   "coordinates": {
     "lat": -3.0833,
     "lon": 119.75

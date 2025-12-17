@@ -3,27 +3,27 @@
   "location": "Tanete Rilau",
   "group": "sulsel",
   "parent": "Sulawesi Selatan",
-  "date": "20251211",
+  "date": "20251212",
   "nasa": {
-    "PRECTOTCORR": 7.78,
-    "T2M_MIN": 27.09,
-    "T2M_MAX": 28.69,
-    "RH2M": 77.4,
-    "WS2M": 1.77,
-    "WD2M": 270.6,
-    "PS": 100.01,
-    "ALLSKY_SFC_SW_DWN": 22.1
+    "PRECTOTCORR": 8.89,
+    "T2M_MIN": 27.32,
+    "T2M_MAX": 28.88,
+    "RH2M": 79.43,
+    "WS2M": 2.78,
+    "WD2M": 296.3,
+    "PS": 99.93,
+    "ALLSKY_SFC_SW_DWN": 13.78
   },
   "prediction": {
-    "probabilitas": 0.011393213428813016,
-    "percentage": 1.1
+    "probabilitas": 0.029891621921529374,
+    "percentage": 3.0
   },
   "interpretasi": {
     "status": "Aman",
     "warna": "green",
     "level": "low"
   },
-  "updated_at": "2025-12-16T13:07:27.278106Z",
+  "updated_at": "2025-12-17T08:04:20.609582Z",
   "coordinates": {
     "lat": -4.47,
     "lon": 119.57
